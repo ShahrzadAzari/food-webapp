@@ -1,0 +1,55 @@
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <style>
+        a:link, a:visited {
+        background-color: #558bee;
+        color: white;
+        padding: 14px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        a:hover, a:active {
+        background-color: rgb(38, 35, 182);
+        }
+
+
+        a#a01:link, a#a01:visited {
+        background-color: rgb(118, 96, 180);
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        a#a01:hover, a#a01:active {
+        background-color: rgb(66, 42, 122);
+        }
+        </style>
+    </head>
+    <body background="https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg" style="background-repeat: no-repeat ;background-size: cover">
+
+        <div class="list-group">
+
+            <a class="list-group-item"><h2 style="color:blue ; float: right ; "> غذاها</h2></a>
+            <br><br>
+            <br><br>
+
+            
+            {% for a in h %}
+            <a href="/food_detail?id={{a.id}}" class="list-group-item list-group-item-action active" style="color:#142b2e ; width: 87px; background-color: #558bee;color: white;padding: 14px 40px; text-align: center ;text-decoration: none ; display:-moz-inline-box ; float : right ">{{a.name}}</a>
+            <br><br>
+            <br><br>
+
+            {% endfor %}
+
+        </div>
+
+        <a id="a01" class="w3-left w3-btn" href="/citysearch" style="float: left">❮ صفحه قبل</a>
+
+    </body>
+</html>

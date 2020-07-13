@@ -1,0 +1,89 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <style>
+           a#a01:link, a#a01:visited {
+            background-color: rgb(118, 96, 180);
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            a#a01:hover, a#a01:active {
+            background-color: rgb(66, 42, 122);
+            }
+
+            table {
+              width:90%;
+            }
+            table, th, td {
+              border:1.8px solid rgb(20, 2, 87);
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: right;
+            }
+            table#t01 tr:nth-child(odd) {
+              background-color: #b5e5e9;
+            }
+            table#t01 tr:nth-child(even) {
+              background-color: #b5e5e9;
+            }
+            table#t01 th {
+              background-color: #61aecc;
+              color: #11093f;
+            }
+
+        </style>
+    </head>
+
+    <body background="https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" style="background-repeat: no-repeat ;background-size: cover">
+
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+            integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+            integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous">
+        </script>
+
+        <div class="container-fluid">
+            <br><br>
+            <table id="t01" align="center" >
+                <tr>
+                    <th>اسم غذا</th><td>{{y.name}}</td>
+                </tr>
+                <tr>
+                    <th>اسم شهر</th><td>{{y.city}}</td>
+                </tr>
+                <tr>
+                    <th>مدت زمان پخت</th><td>{{y.time}}</td>
+                </tr>
+                <tr>
+                    <th>مواد مورد نیاز</th><td>{{y.material}}</td>
+                </tr>
+                <tr>
+                    <th>طرز تهیه</th><td>{{y.how}}</td>
+                </tr>
+                <tr>
+                    <th>نکات تهیه</th><td>{{y.points}}</td>
+                </tr>
+            </table>
+            <br><br>
+            <a id="a01" class="w3-left w3-btn" href="/search/?city={{y.city}}" style="float: left">❮ صفحه قبل</a>   
+            <br><br>
+            <br><br>
+
+
+        </div>
+    </body>
+
+</html>
+
